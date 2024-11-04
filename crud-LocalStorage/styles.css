@@ -1,0 +1,19 @@
+#formularioActualizar,
+      #formularioCrear {
+        display: none;
+      }
+      #btnCrearRegistro {
+        margin: auto;
+        margin-left: auto;
+      }
+      table {
+        margin-left: auto;
+      }
+      thead {
+        background-color: rgb(4, 109, 109);
+        color: white;
+        font-weight: bold;
+      }
+      td {
+        border: 1px solid black;
+      }

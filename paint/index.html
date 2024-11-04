@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            margin: auto;
+        }
+        td{
+            width: 60px;
+            height: 30px;
+            cursor: pointer;
+        }
+        tr,td{
+            border: 1px solid black
+        }
+        .paletaseleccionada{
+            border: 3px solid magenta;
+        }
+        .celda{
+            width: 5px;
+            height: 5px;
+            padding: 0;
+            border: unset !important;
+            z-index: 8;
+        }
+        #zonadibujo{
+            z-index: 9;
+            border: 1px solid black;
+            width: 450px;
+            height: auto;
+            margin: auto;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="paletaColores">
+        <table>
+            <tr>
+                <td class="color_paleta" data-color="yellow"  style="background-color: yellow;"></td>
+                <td class="color_paleta" data-color="green" style="background-color: green;"></td>
+                <td class="color_paleta" data-color="black" style="background-color: black;"></td>
+                <td class="color_paleta" data-color="red" style="background-color: red;"></td>
+                <td class="color_paleta" data-color="blue" style="background-color: blue;"></td>
+                <td id="defaultColor" class="color_paleta paletaseleccionada" data-color="white" style="background-color: white;"></td>
+            </tr>
+            <tr>
+                <td id="estado_paleta" colspan="6" style="text-align: center;"></td>
+            </tr>
+        </table>
+
+    </div>
+    <div id="colorSeleccionado">
+        <p style="display: flex;">Color selccionado: &nbsp; <span id="span_color_seleccionado" style="border:1px solid black; width: 45px;height: 20px;"></span></p>
+    <button id="btnreset">Limpiar Cuadricula</button>
+    </div>
+    <div id="zonadibujo">
+
+    </div>
+    
+
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
